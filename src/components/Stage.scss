@@ -1,0 +1,30 @@
+.stage {
+	font-size: 1rem;
+	div {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		gap: 1rem;
+		p {
+			font-size: 3rem;
+			border: 2px solid coral;
+			padding: 3%;
+			border-radius: 50%;
+			aspect-ratio: 1/1;
+			line-height: 100%;
+			transform: scaleX(-1);
+			margin-top: 1.6rem;
+			cursor: pointer;
+			&:nth-of-type(3) {
+				transform: rotate(-90deg);
+			}
+		}
+	}
+	button {
+		background-color: rgba(240, 248, 255, 0);
+		width: 10%;
+		padding-block: 0.5%;
+		color: coral;
+		border: 2px solid coral;
+	}
+}

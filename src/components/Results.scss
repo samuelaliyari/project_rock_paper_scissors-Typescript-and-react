@@ -1,0 +1,42 @@
+.results {
+	padding: 0 1rem;
+	border: 2px solid coral;
+	border-radius: 1rem;
+	width: 50%;
+
+	margin: 0.7rem auto;
+	article {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+
+		gap: 1rem;
+		&:nth-of-type(1) {
+			p {
+				border: 2px solid coral;
+				padding: 3%;
+				border-radius: 50%;
+				line-height: 100%;
+				font-size: 4rem;
+				margin: 1.6rem 2rem;
+				&:nth-of-type(2) {
+					transform: scaleX(-1);
+				}
+			}
+		}
+		&:nth-of-type(2) {
+			p {
+				&:nth-of-type(1),
+				&:nth-of-type(4) {
+					width: 10%;
+					font-size: 1rem;
+				}
+			}
+		}
+
+		div {
+			font-size: 3rem;
+			margin-inline: 2rem;
+		}
+	}
+}
